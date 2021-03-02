@@ -132,11 +132,7 @@ ul li {
 }*/
 
 .footer {
-  padding-bottom: 30px;
-  padding-right: 30px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 
 .nav a {
