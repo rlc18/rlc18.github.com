@@ -1,4 +1,28 @@
+/* Tipografía */
+
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Space+Mono:wght@700&display=swap");
+
+:root {
+  /* Variables */
+  --primario: #4a5cf4;
+  --primario-claro: #8081f4;
+  --primario-fuerte: #3834c6;
+  --secundario: #eac22f;
+  --secundario-claro: #f2e155;
+  --secundario-fuerte: #e4a729;
+  --terciario: #40cd86;
+  --terciario-claro: #528a3f;
+  --terciario-fuerte: #9cf18f;
+  --bg: #ffffff;
+  --font-base: "Space Grotesk";
+  --font-headings: "Space Mono";
+  --h1: 109px;
+  --h2: 81px;
+  --h3: 54px;
+  --h4: 36px;
+  --h5: 24px;
+  --h6: 16px;
+}
 
 /* Base */
 body {
@@ -13,8 +37,73 @@ h6 {
   font-family: "Space Mono", monospace;
 }
 
+body {
+  font-family: var(--font-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headings);
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h6 {
+  font-size: var(--h6);
+}
+
 ul li {
   list-style-type: none;
+}
+
+/* Componentes */
+.header {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr 5fr 1fr;
+  max-width: 100vw;
+}
+
+.nav {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+.logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.titulo {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+.yo {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
 .nav a {
@@ -28,30 +117,57 @@ ul li {
   color: rgb(64, 211, 140);
 }
 
-/* Componentes */
-.header {
+/* Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-items: center;
+  align-items: center;
+}
+
+.grid {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 1fr 1fr 5fr 1fr;
-  max-width: 100vw;
 }
 
-.logo {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+.grid-center {
+  place-content: center;
 }
 
-.nav {
-  grid-column: 4 / 5;
-  grid-row: 2 / 3;
+.mx-auto {
+  margin: 0 auto;
 }
 
-.titulo {
-  grid-column: 2 / 4;
-  grid-row: 2 / 3;
+.text-center {
+  text-align: center;
 }
 
-.picsum {
-  grid-column: 1 / 3;
-  grid-row: 3 / 4;
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.outline {
+  outline: 2px solid black;
 }
