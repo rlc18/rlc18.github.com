@@ -39,6 +39,8 @@ h6 {
 
 body {
   font-family: var(--font-base);
+  cursor: url("https://res.cloudinary.com/ric18399/image/upload/v1614714878/Portafolio%202021/SVGS/cursor_mfitcf.svg"),
+    auto;
 }
 
 h1,
@@ -56,6 +58,9 @@ h1 {
 
 h2 {
   font-size: var(--h2);
+  color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: var(--terciario);
 }
 
 h3 {
@@ -81,7 +86,7 @@ ul li {
 /* Componentes */
 .header {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 150px 1fr 1fr;
   grid-template-columns: auto 1fr 5fr 1fr;
   max-width: 100vw;
 }
@@ -89,11 +94,14 @@ ul li {
 .nav {
   grid-column: 4 / 5;
   grid-row: 2 / 3;
+  line-height: 50px;
+  margin: 0px 100px auto auto;
 }
 
 .logo {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  margin: 30px auto 0px 40px;
 }
 
 .titulo {
@@ -101,9 +109,34 @@ ul li {
   grid-row: 2 / 3;
 }
 
+.saludo {
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+  margin: 200px auto auto -70px;
+  font-weight: bold;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--primario);
+}
+
 .yo {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  margin: 90px auto auto 100px;
+}
+
+/*.contacto {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  margin: auto;
+  display: flex;
+}*/
+
+.footer {
+  padding-bottom: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .nav a {
@@ -111,10 +144,23 @@ ul li {
   font-family: "Space Mono", monospace;
   font-weight: bold;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .nav a:hover {
   color: rgb(64, 211, 140);
+}
+
+.menu-editorial a:hover {
+  color: var(--secundario);
+}
+
+.menu-branding a:hover {
+  color: var(--primario);
+}
+
+.menu-miscelanea a:hover {
+  color: var(--secundario);
 }
 
 /* Utilities */
