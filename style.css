@@ -145,6 +145,9 @@ ul li {
 
 .nav a:hover {
   color: rgb(64, 211, 140);
+  cursor: url("https://res.cloudinary.com/ric18399/image/upload/v1614714878/Portafolio%202021/SVGS/cursor_mfitcf.svg"),
+    auto;
+  transition: 0.1s ease-in-out;
 }
 
 .menu-editorial a:hover {
