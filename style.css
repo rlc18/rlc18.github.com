@@ -124,15 +124,15 @@ ul li {
   margin: 90px auto auto 100px;
 }
 
-/*.contacto {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-  margin: auto;
-  display: flex;
-}*/
-
 .footer {
+  position: relative;
   display: flex;
+}
+
+.contacto {
+  position: fixed;
+  bottom: 20px;
+  left: 40px;
 }
 
 .nav a {
@@ -147,7 +147,6 @@ ul li {
   color: rgb(64, 211, 140);
   cursor: url("https://res.cloudinary.com/ric18399/image/upload/v1614714878/Portafolio%202021/SVGS/cursor_mfitcf.svg"),
     auto;
-  transition: 0.1s ease-in-out;
 }
 
 .menu-editorial a:hover {
