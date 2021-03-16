@@ -290,8 +290,37 @@ un-proyecto x -> una imagen de proyecto
   justify-self: center;
   margin-left: -50px;
 }
+/* Modal proyecto */
 
+.cat-editorial-modal {
+  display: flex;
+  max-width:897px;
+}
+.proyecto-izquierda {
+  background-color: var(--secundario-fuerte);
+  padding: 80px;
+  position: relative;
+}
+.proyecto-titulo {
+  color: white;
+  -webkit-text-stroke: unset;
+}
+.proyecto-flechas {
+  color: white;
+  position: absolute;
+  -webkit-text-stroke: unset;
+  right: 0;
+}
+.proyecto-descripcion {
+  color: white;
+}
+
+.proyecto-galeria{
+  display:flex;
+  gap:20px;
+}
 /* Utilities */
+
 .flex {
   display: flex;
 }
