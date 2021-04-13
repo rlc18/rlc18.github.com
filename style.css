@@ -166,7 +166,7 @@ ul li {
 }
 
 .nav a:hover {
-  color: rgb(64, 211, 140);
+  color: var(--terciario);
   cursor: url("https://res.cloudinary.com/ric18399/image/upload/v1614871840/Portafolio%202021/SVGS/cursor_ppykbg.svg"),
     auto;
 }
@@ -210,7 +210,7 @@ un-proyecto x -> una imagen de proyecto
   grid-column: 2 / 4;
   grid-row: 1 / 2;
   justify-self: center;
-  align-self: center;
+  padding-left: 400px;
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: var(--secundario);
 }
@@ -290,11 +290,109 @@ un-proyecto x -> una imagen de proyecto
   justify-self: center;
   margin-left: -50px;
 }
+
+.cat-web {
+  display: grid;
+  grid-template-columns: 670px 1fr;
+  grid-template-rows: auto 1fr 1fr;
+}
+
+.cat-web-titulo {
+  display: flex;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding-left: 350px;
+  align-self: center;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: var(--terciario);
+}
+
+.cat-web-img1 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  margin-top: 80px;
+  padding-left: 200px;
+}
+
+.cat-web-img2 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  margin-top: -40px;
+  padding-left: 200px;
+}
+
+.cat-misc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 240px 440px 308px;
+}
+
+.cat-misc-titulo {
+  display: flex;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding-left: 100px;
+  align-self: center;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: var(--secundario);
+}
+
+.cat-misc-img1 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  margin-top: 80px;
+  padding-left: 200px;
+}
+
+.cat-misc-img2 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  margin-top: -40px;
+  padding-left: 200px;
+}
+
+.redes {
+  display: grid;
+  margin-top: -80px;
+  margin-left: 1500px;
+  grid-column-gap: 20px;
+  grid-template-columns: 50px 50px;
+}
+
+.instagram {
+  display: flex;
+}
+.behance {
+  display: flex;
+}
+
+.sorpresa-img {
+  display: flexbox;
+  margin-left: 1000px;
+  margin-bottom: 100px;
+  animation: starAnimation 2500ms cubic-bezier(0.17, 0.67, 0.35, 1.03);
+  animation-iteration-count: infinite;
+}
+
+@keyframes starAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sorpresa a:hover {
+  cursor: url("https://res.cloudinary.com/ric18399/image/upload/v1614871840/Portafolio%202021/SVGS/cursor_ppykbg.svg"),
+    auto;
+}
+
 /* Modal proyecto */
 
 .cat-editorial-modal {
   display: flex;
-  max-width:897px;
+  max-width: 897px;
 }
 .proyecto-izquierda {
   background-color: var(--secundario-fuerte);
@@ -315,9 +413,9 @@ un-proyecto x -> una imagen de proyecto
   color: white;
 }
 
-.proyecto-galeria{
-  display:flex;
-  gap:20px;
+.proyecto-galeria {
+  display: flex;
+  gap: 20px;
 }
 /* Utilities */
 
