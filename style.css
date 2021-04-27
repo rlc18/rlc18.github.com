@@ -273,14 +273,16 @@ un-proyecto x -> una imagen de proyecto
     auto;
 }
 .popup .content {
-  max-height: 30%;
+  max-height: 90%;
   overflow: auto;
   color: white;
-  padding-right: 350px;
+  padding-right: 250px;
 }
 
 .slides {
-  margin-top: 50px;
+  margin-top: 30px;
+  justify-self: center;
+  align-self: center;
 }
 
 .cat-editorial-img2 {
