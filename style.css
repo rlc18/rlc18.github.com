@@ -39,7 +39,7 @@ h6 {
 
 body {
   font-family: var(--font-base);
-  cursor: url("https://res.cloudinary.com/ric18399/image/upload/v1614871840/Portafolio%202021/SVGS/cursor_ppykbg.svg"),
+  cursor: url(https://res.cloudinary.com/ric18399/image/upload/v1614871840/Portafolio%202021/SVGS/cursor_ppykbg.svg),
     auto;
 }
 
@@ -173,7 +173,8 @@ ul li {
 
 img:hover {
   color: var(--terciario);
-  cursor: url("./assets/svg-hover.svg"), auto;
+  cursor: url("https://res.cloudinary.com/ric18399/image/upload/v1619542365/Portafolio%202021/jpgs/svg-hover_ovm6mw.svg"),
+    auto;
 }
 
 .menu-editorial a:hover {
@@ -225,15 +226,160 @@ un-proyecto x -> una imagen de proyecto
   grid-row: 2 / 5;
   justify-self: center;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: opacity 100ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px 0 0 500px;
+  padding: 20px;
+  background: var(--secundario-fuerte);
+  border-radius: 5px;
+  width: 60%;
+  height: 80%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: white;
+  -webkit-text-stroke-width: 0px;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.popup .close:hover {
+  cursor: url("https://res.cloudinary.com/ric18399/image/upload/v1619542365/Portafolio%202021/jpgs/svg-hover_ovm6mw.svg"),
+    auto;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  color: white;
+  padding-right: 350px;
+}
+
+.slides {
+  margin-top: 50px;
+}
+
 .cat-editorial-img2 {
   grid-column: 2 / 3;
   grid-row: 4 / 7;
   padding-left: 15px;
 }
+
+.popup2 {
+  margin: 70px 0 0 500px;
+  padding: 20px;
+  background: var(--secundario-fuerte);
+  border-radius: 5px;
+  width: 60%;
+  height: 80%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup2 h2 {
+  margin-top: 0;
+  color: white;
+  -webkit-text-stroke-width: 0px;
+  line-height: 90px;
+}
+.popup2 .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.popup2 .close:hover {
+  cursor: url("https://res.cloudinary.com/ric18399/image/upload/v1619542365/Portafolio%202021/jpgs/svg-hover_ovm6mw.svg"),
+    auto;
+}
+.popup2 .content {
+  max-height: 70%;
+  overflow: auto;
+  color: white;
+  padding-top: 25px;
+  padding-right: 350px;
+}
+
+.slide {
+  display: grid;
+  grid-template-columns: 187px 329px 302px;
+  column-gap: 10%;
+  margin-top: 25px;
+}
 .cat-editorial-img3 {
   grid-column: 3 / 4;
   grid-row: 3 / 6;
 }
+
+.popup3 {
+  margin: 70px 0 0 500px;
+  padding: 20px;
+  background: var(--secundario-fuerte);
+  border-radius: 5px;
+  width: 60%;
+  height: 80%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup3 h2 {
+  margin-top: 0;
+  color: white;
+  -webkit-text-stroke-width: 0px;
+  line-height: 90px;
+}
+.popup3 .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-family: "Space Mono", monospace;
+  font-size: 60px;
+  text-decoration: none;
+  color: white;
+}
+
+.popup3 .content {
+  max-height: 70%;
+  overflow: auto;
+  color: white;
+  padding-top: 25px;
+  padding-right: 350px;
+}
+
+.slide {
+  display: grid;
+  grid-template-columns: 187px 329px 302px;
+  column-gap: 10%;
+  margin-top: 25px;
+}
+
 .cat-editorial-img4 {
   grid-column: 1 / 2;
   grid-row: 5 / 8;
