@@ -11,7 +11,6 @@
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <header class="header">
       <!-- atributos de las imágenes src(de donde jalamos la imagen), alt(texto alternativo que ayuda a describir de que trata la imagen útil para cuando la imagen no se carga), width(ancho de la imagen), height(alto de la imagen), loading(optimizacion para indicar como cargar la imagen, el valor ideal es lazy que indica que cargue el documento lo más pronto posible y al final las imágenes) -->
@@ -26,21 +25,23 @@
       <nav class="nav">
         <ul>
           <li class="menu-editorial">
-            <a href="#" class="menu">Editorial</a>
+            <a href="#edit-c" class="menu">Editorial</a>
           </li>
-          <li class="menu-branding"><a href="#" class="menu">Branding</a></li>
-          <li class="menu-web"><a href="#" class="menu">Diseño Web</a></li>
+          <li class="menu-branding">
+            <a href="#brand-c" class="menu">Branding</a>
+          </li>
+          <li class="menu-web"><a href="#web-c" class="menu">Diseño Web</a></li>
           <li class="menu-miscelanea">
-            <a href="#" class="menu">Miscelanea</a>
+            <a href="#misc-c" class="menu">Miscelanea</a>
           </li>
         </ul>
       </nav>
       <h2 class="titulo">Portafolio</h2>
       <h5 class="saludo">
-        Hola! Soy Ricardo López, comunicador visual <br />
-        de la Ciudad de México. Busco siempre que mis trabajos <br />
-        tengan un toque de diversión/de emoción por medio <br />de juegos
-        tipográficos interesantes y con el uso <br />
+        Hola! Soy Ricardo López, comunicador visual
+        de la Ciudad de México. Busco siempre que mis trabajos
+        tengan un toque de diversión/de emoción por medio de juegos
+        tipográficos interesantes y con el uso
         de combinaciones de colores contrastantes.
       </h5>
 
@@ -53,7 +54,7 @@
     </header>
 
     <section class="cat-editorial">
-      <h2 class="cat-editorial-titulo">Editorial</h2>
+      <h2 class="cat-editorial-titulo" id="edit-c">Editorial</h2>
       <div class="cat-editorial-img1">
         <a href="#popup1">
           <img
@@ -77,7 +78,8 @@
               Finalmente con los colores se intentó darle una sensación más
               contemporanea. Es uno de dos carteles de la misma identidad. El
               otro corresponde a Dialogues des Carmélites.
-              <img class="slides"
+              <img
+                class="slides"
                 src="https://res.cloudinary.com/ric18399/image/upload/v1619536375/Portafolio%202021/jpgs/Marns2_i8efgn.png"
                 alt=""
                 width="1000"
@@ -114,77 +116,281 @@
             <a class="close" href="#">←</a>
             <div class="content">
               La ópera está basada en los trágicos sucesos que involucraron a
-              una comunidad de monjas carmelitas de la ciudad de Compiègne
-              durante la Revolución francesa. El régimen del terror que
+              una comunidad <br />de monjas carmelitas de la ciudad de Compiègne
+              durante la Revolución francesa. <br />El régimen del terror que
               persiguió a sus religiosas<br />
               <br />
               En este cartel de ópera con el uso de tipografía principalmente.
-              La composición tenía que ser atractiva e interesante y que tuviera
-              una cierta relación sutil y efectiva con la historia o el tema.
-              Finalmente con los colores se intentó darle una sensación más
-              contemporanea. Es uno de dos carteles de la misma identidad. El
-              otro corresponde a Marnie.
+              La composición tenía que <br />
+              ser atractiva e interesante y que tuviera una cierta relación
+              sutil y efectiva con la historia<br />
+              o el tema. Finalmente con los colores se intentó darle una
+              sensación más contemporanea. <br />Es uno de dos carteles de la
+              misma identidad. El otro corresponde a Marnie.
 
-              <div class="slide">
-                <img
-                  src="https://res.cloudinary.com/ric18399/image/upload/v1619537700/Portafolio%202021/jpgs/Dialogues_des_Carm%C3%A9lites_de64no.jpg"
-                  alt=""
-                  width="187"
-                  height="242"
-                />
-                <img
-                  src="https://res.cloudinary.com/ric18399/image/upload/v1619537670/Portafolio%202021/jpgs/car_wbt1l5.jpg"
-                  alt=""
-                  width="329"
-                  height="242"
-                />
-                <img
-                  src="https://res.cloudinary.com/ric18399/image/upload/v1619537717/Portafolio%202021/jpgs/Carm%C3%A9lites_ebgctx.jpg"
-                  alt=""
-                  width="302"
-                  height="242"
-                />
+              <div class="slider">
+                <div class="imagenes">
+                  <img
+                    src="https://res.cloudinary.com/ric18399/image/upload/v1619537700/Portafolio%202021/jpgs/Dialogues_des_Carm%C3%A9lites_de64no.jpg"
+                    class="imagen actual"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/ric18399/image/upload/v1619537670/Portafolio%202021/jpgs/car_wbt1l5.jpg"
+                    class="imagen"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/ric18399/image/upload/v1619537717/Portafolio%202021/jpgs/Carm%C3%A9lites_ebgctx.jpg"
+                    class="imagen"
+                  />
+                </div>
+                <button class="anterior">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="89"
+                    height="89"
+                  >
+                    <path
+                      d="M 11.871 19.506 L 29.49 1.887 C 29.924 1.453 29.924 0.758 29.49 0.325 C 29.057 -0.108 28.362 -0.108 27.929 0.325 L 9.524 18.729 C 9.091 19.163 9.091 19.858 9.524 20.291 L 27.929 38.687 C 28.141 38.9 28.427 39.014 28.705 39.014 C 28.983 39.014 29.269 38.908 29.482 38.687 C 29.915 38.254 29.915 37.559 29.482 37.126 Z"
+                      fill="transparent"
+                    />
+                  </svg>
+                </button>
+                <button class="siguiente">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="89"
+                    height="89"
+                  >
+                    <path
+                      d="M 11.871 19.506 L 29.49 1.887 C 29.924 1.453 29.924 0.758 29.49 0.325 C 29.057 -0.108 28.362 -0.108 27.929 0.325 L 9.524 18.729 C 9.091 19.163 9.091 19.858 9.524 20.291 L 27.929 38.687 C 28.141 38.9 28.427 39.014 28.705 39.014 C 28.983 39.014 29.269 38.908 29.482 38.687 C 29.915 38.254 29.915 37.559 29.482 37.126 Z"
+                      fill="transparent"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <a href="#popup3">
       <div class="cat-editorial-img3">
-        <img
-          src="https://res.cloudinary.com/ric18399/image/upload/v1615315014/Portafolio%202021/jpgs/proyecto-manual-07_tfd4gb.jpg"
-          alt="imagen"
-          width="336"
-          height="458"
-        />
+        <a href="#popup3">
+          <img
+            src="https://res.cloudinary.com/ric18399/image/upload/v1615315014/Portafolio%202021/jpgs/proyecto-manual-07_tfd4gb.jpg"
+            alt="imagen"
+            width="336"
+            height="458"
+          />
         </a>
         <div id="popup3" class="overlay">
           <div class="popup2">
-            <h2 class="modalt">Manual <br> Tipográfico</h2>
+            <h2 class="modalt">
+              Manual <br />
+              Tipográfico
+            </h2>
             <a class="close" href="#">←</a>
             <div class="content">
-             Las usamos para escribir, para comunicarnos y entendernos; sin embargo conocemos muy poco de ellas. Este Manual tipográfico fue diseñado para entender la tipográfía desde su anatomía hasta sus usos dentro de texos. Ejemplificado todo esto con juegos de escalas y formas.
+              Las usamos para escribir, para comunicarnos y entendernos; sin
+              embargo <br />conocemos muy poco de ellas. Este Manual tipográfico
+              fue diseñado para entender <br />la tipográfía desde su anatomía
+              hasta sus usos dentro de texos. Ejemplificando todo <br />esto con
+              juegos de escalas y formas.
 
+              <div class="slider">
+                <div class="imagenes">
+                  <img
+                    src="https://res.cloudinary.com/ric18399/image/upload/v1619710424/Portafolio%202021/jpgs/Manual_1_vqagb4.jpg"
+                    class="imagen actual"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/ric18399/image/upload/v1619710420/Portafolio%202021/jpgs/Manual_2_avqdoy.jpg"
+                    class="imagen"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/ric18399/image/upload/v1619710423/Portafolio%202021/jpgs/Manual_3_kjbrmq.jpg"
+                    class="imagen"
+                  />
+                </div>
+                <button class="anterior">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="89"
+                    height="89"
+                  >
+                    <path
+                      d="M 11.871 19.506 L 29.49 1.887 C 29.924 1.453 29.924 0.758 29.49 0.325 C 29.057 -0.108 28.362 -0.108 27.929 0.325 L 9.524 18.729 C 9.091 19.163 9.091 19.858 9.524 20.291 L 27.929 38.687 C 28.141 38.9 28.427 39.014 28.705 39.014 C 28.983 39.014 29.269 38.908 29.482 38.687 C 29.915 38.254 29.915 37.559 29.482 37.126 Z"
+                      fill="transparent"
+                    />
+                  </svg>
+                </button>
+                <button class="siguiente">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="89"
+                    height="89"
+                  >
+                    <path
+                      d="M 11.871 19.506 L 29.49 1.887 C 29.924 1.453 29.924 0.758 29.49 0.325 C 29.057 -0.108 28.362 -0.108 27.929 0.325 L 9.524 18.729 C 9.091 19.163 9.091 19.858 9.524 20.291 L 27.929 38.687 C 28.141 38.9 28.427 39.014 28.705 39.014 C 28.983 39.014 29.269 38.908 29.482 38.687 C 29.915 38.254 29.915 37.559 29.482 37.126 Z"
+                      fill="transparent"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="cat-editorial-img4">
-        <img
-          src="https://res.cloudinary.com/ric18399/image/upload/v1615314987/Portafolio%202021/jpgs/proyecto-maria-08_sgjd65.jpg"
-          alt="imagen"
-          width="336"
-          height="461"
-        />
+        <a href="#popup4">
+          <img
+            src="https://res.cloudinary.com/ric18399/image/upload/v1615314987/Portafolio%202021/jpgs/proyecto-maria-08_sgjd65.jpg"
+            alt="imagen"
+            width="336"
+            height="461"
+          />
+        </a>
+      <div id="popup4" class="overlay">
+        <div class="popup2">
+          <h2 class="modalt">14:32:19</h2>
+          <a class="close" href="#">←</a>
+          <div class="content">
+            <h5 class="frase">
+              “Alejandra conoce a Fernando. <br />
+              Alejandra se enamora de él. <br />
+              Fernando se muere.”
+            </h5>
+            <p>
+              Es la trágica historia de amor relatada en 14:32:19 la que sirve
+              de inspiración de este proyecto.<br />
+              El diseño de esta portada y el póster de la presentación del libro
+              fueron hechos a través de collage <br />buscando reflejar la magia
+              de la relación de los personajes principales y a su vez la
+              adversidad a la<br />
+              que será sometida.
+            </p>
+
+            <div class="slider">
+              <div class="imagenes">
+                <img
+                  class="imagen actual"
+                  src="https://res.cloudinary.com/ric18399/image/upload/v1619713966/Portafolio%202021/jpgs/mockup_prio4x.jpg"
+                  width="562"
+                  height="400"
+                />
+                <img
+                  class="imagen"
+                  src="https://res.cloudinary.com/ric18399/image/upload/v1619710849/Portafolio%202021/jpgs/Captura_de_Pantalla_2020-04-26_a_la_s_20.28.58_sqnsjv.jpg"
+                  width="562"
+                  height="400"
+                />
+                <img
+                  class="imagen"
+                  src="https://res.cloudinary.com/ric18399/image/upload/v1619710859/Portafolio%202021/jpgs/Madan_qeezok.jpg"
+                  width="562"
+                  height="400"
+                />
+              </div>
+              <button class="anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="89" height="89">
+                  <path
+                    d="M 11.871 19.506 L 29.49 1.887 C 29.924 1.453 29.924 0.758 29.49 0.325 C 29.057 -0.108 28.362 -0.108 27.929 0.325 L 9.524 18.729 C 9.091 19.163 9.091 19.858 9.524 20.291 L 27.929 38.687 C 28.141 38.9 28.427 39.014 28.705 39.014 C 28.983 39.014 29.269 38.908 29.482 38.687 C 29.915 38.254 29.915 37.559 29.482 37.126 Z"
+                    fill="transparent"
+                  />
+                </svg>
+              </button>
+              <button class="siguiente">
+                <svg xmlns="http://www.w3.org/2000/svg" width="89" height="89">
+                  <path
+                    d="M 11.871 19.506 L 29.49 1.887 C 29.924 1.453 29.924 0.758 29.49 0.325 C 29.057 -0.108 28.362 -0.108 27.929 0.325 L 9.524 18.729 C 9.091 19.163 9.091 19.858 9.524 20.291 L 27.929 38.687 C 28.141 38.9 28.427 39.014 28.705 39.014 C 28.983 39.014 29.269 38.908 29.482 38.687 C 29.915 38.254 29.915 37.559 29.482 37.126 Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+      </div>
+
+
+      <div id="popup5" class="overlay">
+        <div class="popup2">
+          <h2 class="modalt">Viniles</h2>
+          <a class="close" href="#">←</a>
+          <div class="content">
+            <p>
+              La música no solo nos trasmite emociones sino también
+              recuerdos,<br />
+              colores y olores a través de sus letras y melodías. En estas
+              portadas <br />
+              se buscó capturar el carácter de la música para poder crear así<br />
+              sus portadas. El elemento base y principal para la imagen del
+              record fue <br />
+              la tipografía y su acomodo; pues este, como las letras de una
+              canción, <br />
+              transmite un mensaje a través de como está puesto.
+            </p>
+
+            <div class="slider">
+              <div class="imagenes">
+                <img
+                  class="imagen actual"
+                  src="https://res.cloudinary.com/ric18399/image/upload/v1620151676/Portafolio%202021/jpgs/lexapro_wvjpbi.png"
+                  width="794"
+                  height="878"
+                />
+                <img
+                  class="imagen"
+                  src="https://res.cloudinary.com/ric18399/image/upload/v1620151676/Portafolio%202021/jpgs/Beck_v5bvef.png"
+                  width="794"
+                  height="878"
+                />
+                <img
+                  class="imagen"
+                  src="https://res.cloudinary.com/ric18399/image/upload/v1620151676/Portafolio%202021/jpgs/chopin_wja5wr.png"
+                  width="794"
+                  height="878"
+                />
+                <img
+                  class="imagen"
+                  src="https://res.cloudinary.com/ric18399/image/upload/v1620151197/Portafolio%202021/jpgs/Venutra_xa0doc.png"
+                  width="794"
+                  height="878"
+                />
+              </div>
+              <button class="anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="89" height="89">
+                  <path
+                    d="M 11.871 19.506 L 29.49 1.887 C 29.924 1.453 29.924 0.758 29.49 0.325 C 29.057 -0.108 28.362 -0.108 27.929 0.325 L 9.524 18.729 C 9.091 19.163 9.091 19.858 9.524 20.291 L 27.929 38.687 C 28.141 38.9 28.427 39.014 28.705 39.014 C 28.983 39.014 29.269 38.908 29.482 38.687 C 29.915 38.254 29.915 37.559 29.482 37.126 Z"
+                    fill="transparent"
+                  />
+                </svg>
+              </button>
+              <button class="siguiente">
+                <svg xmlns="http://www.w3.org/2000/svg" width="89" height="89">
+                  <path
+                    d="M 11.871 19.506 L 29.49 1.887 C 29.924 1.453 29.924 0.758 29.49 0.325 C 29.057 -0.108 28.362 -0.108 27.929 0.325 L 9.524 18.729 C 9.091 19.163 9.091 19.858 9.524 20.291 L 27.929 38.687 C 28.141 38.9 28.427 39.014 28.705 39.014 C 28.983 39.014 29.269 38.908 29.482 38.687 C 29.915 38.254 29.915 37.559 29.482 37.126 Z"
+                    fill="transparent"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
       <div class="cat-editorial-img5">
-        <img
-          src="https://res.cloudinary.com/ric18399/image/upload/v1615315148/Portafolio%202021/jpgs/proyecto-lps_bxi2lx.gif"
-          alt="imagen"
-          width="335"
-          height="335"
-        />
+        <a href="#popup5">
+          <img
+            src="https://res.cloudinary.com/ric18399/image/upload/v1615315148/Portafolio%202021/jpgs/proyecto-lps_bxi2lx.gif"
+            alt="imagen"
+            width="335"
+            height="335"
+          />
+        </a>
       </div>
+
       <div class="cat-editorial-img6">
         <img
           src="https://res.cloudinary.com/ric18399/image/upload/v1615315161/Portafolio%202021/jpgs/proyecto-malbas_mghoan.gif"
@@ -204,7 +410,7 @@
     </section>
 
     <section class="cat-branding">
-      <h2 class="cat-branding-titulo">Branding</h2>
+      <h2 class="cat-branding-titulo" id="brand-c">Branding</h2>
       <div class="cat-branding-img1">
         <img
           src="https://res.cloudinary.com/ric18399/image/upload/v1615478800/Portafolio%202021/jpgs/proyecto-borbollon-05_pjpgoa.png"
@@ -240,7 +446,7 @@
     </section>
 
     <section class="cat-web">
-      <h2 class="cat-web-titulo">Diseño Web</h2>
+      <h2 class="cat-web-titulo" id="web-c">Diseño Web</h2>
       <div class="cat-web-img1">
         <img
           src="https://res.cloudinary.com/ric18399/image/upload/v1618282643/Portafolio%202021/jpgs/WAT_krxi98.png"
@@ -260,21 +466,17 @@
     </section>
 
     <section class="cat-misc">
-      <h2 class="cat-misc-titulo">Miscelanea</h2>
+      <h2 class="cat-misc-titulo" id="misc-c">Miscelanea</h2>
       <div class="cat-misc-img1">
         <img
           src="https://res.cloudinary.com/ric18399/image/upload/v1618282644/Portafolio%202021/jpgs/Rana-07_zpggzl.png"
           alt="Rana"
-          width="337"
-          height="547"
         />
       </div>
       <div class="cat-misc-img2">
         <img
           src="https://res.cloudinary.com/ric18399/image/upload/v1618282643/Portafolio%202021/jpgs/metro-08_xnamct.png"
           alt="Metro"
-          width="562"
-          height="699"
         />
       </div>
     </section>
@@ -292,7 +494,6 @@
         height="409"
       />
     </a>
-
     <nav class="redes">
       <a href=" "
         ><img
@@ -334,12 +535,68 @@
     </footer>
 
     <!-- .proyecto>img.proyecto-img+h.titulo+p.descripcion. -->
-
-
-   <script src="./slider.js"></script>
     <script src="./index.js"></script>
     <script>
-      src="./imgContent.js";
+      const carrusel = document.querySelector(".slider");
+
+      function Slider(slider) {
+        // crear variables para trabajar con las imagenes
+        let anterior;
+        let actual;
+        let siguiente;
+        // seleccionar los elementos que necesitamos para el slider
+        const imagenes = slider.querySelector(".imagenes");
+        const verAnterior = slider.querySelector(".anterior");
+        const verSiguiente = slider.querySelector(".siguiente");
+
+        function comenzarSlider() {
+          actual =
+            slider.querySelector(".actual") || imagenes.firstElementChild;
+          anterior = actual.previousElementSibling || imagenes.lastElementChild;
+          siguiente = actual.nextElementSibling || imagenes.firstElementChild;
+        }
+
+        function agregarClases() {
+          actual.classList.add("actual");
+          anterior.classList.add("anterior");
+          siguiente.classList.add("siguiente");
+        }
+
+        function move(direction) {
+          // primero, quitar todas las clases de la imagen actual
+          const eliminarClases = ["anterior", "actual", "siguiente"];
+          anterior.classList.remove(...eliminarClases);
+          actual.classList.remove(...eliminarClases);
+          siguiente.classList.remove(...eliminarClases);
+          if (direction === "back") {
+            [anterior, actual, siguiente] = [
+              // obtener la imagen anterior, si no hay ninguna, obtener la última imagen del slider
+              anterior.previousElementSibling || imagenes.lastElementChild,
+              anterior,
+              actual,
+            ];
+          } else {
+            [anterior, actual, siguiente] = [
+              actual,
+              siguiente,
+              // obtener la siguiente imagen, o si es la última, ir a la primera imagen
+              siguiente.nextElementSibling || imagenes.firstElementChild,
+            ];
+          }
+
+          agregarClases();
+        }
+
+        // activar la función slider
+        comenzarSlider();
+        agregarClases();
+
+        // Agregar Event listeners
+        verAnterior.addEventListener("click", () => move("back"));
+        verSiguiente.addEventListener("click", move);
+      }
+
+      Slider(carrusel);
     </script>
   </body>
 </html>
