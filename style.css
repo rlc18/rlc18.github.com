@@ -83,6 +83,10 @@ ul li {
   list-style-type: none;
 }
 
+[hidden] {
+  display: none;
+}
+
 /* Componentes */
 .header {
   display: grid;
@@ -199,7 +203,7 @@ img:hover {
   grid-template-rows: auto 0.75fr 0.3fr 1fr 0.5fr 0.5fr 0.75fr 0.75fr;
 }
 
-@media screen and (max-width: 415px) {
+/* @media screen and (max-width: 415px) {
   .h2 {
     -webkit-text-stroke-width: 2px;
   }
@@ -241,6 +245,31 @@ img:hover {
     width: 25px;
     height: 25px;
   }
+} */
+@media screen and (max-width: 415px) {
+  /* .h2 {
+  }
+
+  .saludo {
+  }
+
+  .cat-editorial {
+  }
+
+  .cat-editorial-titulo {
+  }
+
+  .cat-branding {
+  }
+
+  .sorpresa-img {
+  }
+
+  .instagram {
+  }
+
+  .behance {
+  } */
 }
 
 .cat-editorial-titulo {
@@ -525,6 +554,43 @@ button:last-child {
   grid-row: 7 / 10;
   margin-top: -60px;
 }
+
+.popup6 {
+  margin: 70px 0 0 500px;
+  padding: 20px;
+  background: var(--secundario-fuerte);
+  border-radius: 5px;
+  width: 60%;
+  height: 80%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup6 h2 {
+  margin-top: 0;
+  color: white;
+  -webkit-text-stroke-width: 0px;
+  line-height: 90px;
+}
+.popup6 .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.popup6 .close:hover {
+  cursor: url("https://res.cloudinary.com/ric18399/image/upload/v1619542365/Portafolio%202021/jpgs/svg-hover_ovm6mw.svg"),
+    auto;
+}
+.popup6 .content {
+  max-height: 70%;
+  overflow: auto;
+  color: white;
+}
+
 .cat-editorial-img7 {
   grid-column: 1 / 3;
   grid-row: 9 / 11;
@@ -554,12 +620,75 @@ button:last-child {
   margin-top: 80px;
   padding-left: 250px;
 }
+
+.popup8 {
+  margin: 70px 0 0 500px;
+  padding: 20px;
+  background: var(--primario);
+  border-radius: 5px;
+  width: 60%;
+  height: 80%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup8 h2 {
+  margin-bottom: 30px;
+  color: white;
+  -webkit-text-stroke-width: 0px;
+  line-height: 90px;
+}
+.popup8 .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.popup8 .close:hover {
+  cursor: url("https://res.cloudinary.com/ric18399/image/upload/v1619542365/Portafolio%202021/jpgs/svg-hover_ovm6mw.svg"),
+    auto;
+}
+.popup8 .content {
+  max-height: 70%;
+  overflow: auto;
+  color: white;
+}
+
 .cat-branding-img2 {
   grid-column: 2 / 4;
   grid-row: 3 / 6;
   padding-left: 50px;
   margin-top: -100px;
 }
+
+.popup9 h2 {
+  margin-bottom: 30px;
+  color: white;
+  -webkit-text-stroke-width: 0px;
+  line-height: 90px;
+}
+.popup9 .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.popup9 .close:hover {
+  cursor: url("https://res.cloudinary.com/ric18399/image/upload/v1619542365/Portafolio%202021/jpgs/svg-hover_ovm6mw.svg"),
+    auto;
+}
+.popup9 .content {
+  max-height: 70%;
+  overflow: auto;
+  color: white;
+}
+
 .cat-branding-img3 {
   grid-column: 1 / 3;
   grid-row: 5 / 8;
@@ -593,6 +722,42 @@ button:last-child {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   margin-top: 80px;
+}
+
+.popup12 {
+  margin: 70px 0 0 500px;
+  padding: 20px;
+  background: var(--terciario);
+  border-radius: 5px;
+  width: 60%;
+  height: 80%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup12 h2 {
+  margin-bottom: 30px;
+  color: white;
+  -webkit-text-stroke-width: 0px;
+  line-height: 90px;
+}
+.popup12 .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.popup12 .close:hover {
+  cursor: url("https://res.cloudinary.com/ric18399/image/upload/v1619542365/Portafolio%202021/jpgs/svg-hover_ovm6mw.svg"),
+    auto;
+}
+.popup12 .content {
+  max-height: 70%;
+  overflow: auto;
+  color: white;
 }
 
 .cat-web-img2 {
@@ -753,4 +918,27 @@ button:last-child {
 
 .outline {
   outline: 2px solid black;
+}
+
+@media screen and (max-width: 415px) {
+  .cat-editorial {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+  }
+  .cat-editorial-img1,
+  .cat-editorial-img2,
+  .cat-editorial-img3 {
+    display: grid;
+    grid-auto-flow: row;
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .cat-editorial-titulo {
+    grid-column: unset;
+    grid-row: unset;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--secundario);
+  }
 }
