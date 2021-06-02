@@ -11,7 +11,7 @@
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="layout">
     <header class="header">
       <!-- atributos de las imágenes src(de donde jalamos la imagen), alt(texto alternativo que ayuda a describir de que trata la imagen útil para cuando la imagen no se carga), width(ancho de la imagen), height(alto de la imagen), loading(optimizacion para indicar como cargar la imagen, el valor ideal es lazy que indica que cargue el documento lo más pronto posible y al final las imágenes) -->
       <img
@@ -50,6 +50,12 @@
         width="235"
         height="275"
       />
+
+      <img
+        class="yor"
+        src="https://res.cloudinary.com/ric18399/image/upload/v1622673972/Portafolio%202021/jpgs/Captura_de_Pantalla_2021-06-02_a_la_s_17.45.49_vstk6a.png"
+        alt=""
+      />
     </header>
 
     <section class="cat-editorial">
@@ -59,8 +65,6 @@
           <img
             src="https://res.cloudinary.com/ric18399/image/upload/v1615313995/Portafolio%202021/jpgs/proyecto-marnie-05_azonzo.jpg"
             alt="Proyecto Marnie"
-            width="336"
-            height="458"
         /></a>
 
         <div id="popup1" class="overlay">
@@ -106,8 +110,6 @@
           <img
             src="https://res.cloudinary.com/ric18399/image/upload/v1615314953/Portafolio%202021/jpgs/proyecto-carmelites-06_j4zqzw.jpg"
             alt="imagen"
-            width="336"
-            height="458"
         /></a>
         <div id="popup2" class="overlay">
           <div class="popup2">
@@ -176,8 +178,6 @@
           <img
             src="https://res.cloudinary.com/ric18399/image/upload/v1615315014/Portafolio%202021/jpgs/proyecto-manual-07_tfd4gb.jpg"
             alt="imagen"
-            width="336"
-            height="458"
           />
         </a>
         <div id="popup3" class="overlay">
@@ -244,8 +244,6 @@
           <img
             src="https://res.cloudinary.com/ric18399/image/upload/v1615314987/Portafolio%202021/jpgs/proyecto-maria-08_sgjd65.jpg"
             alt="imagen"
-            width="336"
-            height="461"
           />
         </a>
         <div id="popup4" class="overlay">
@@ -319,90 +317,96 @@
         </div>
       </div>
 
-      <div id="popup5" class="overlay">
-        <div class="popup2">
-          <h2 class="modalt">Viniles</h2>
-          <a class="close" href="#">←</a>
-          <div class="content">
-            <p>
-              La música no solo nos trasmite emociones sino también
-              recuerdos,<br />
-              colores y olores a través de sus letras y melodías. En estas
-              portadas <br />
-              se buscó capturar el carácter de la música para poder crear así<br />
-              sus portadas. El elemento base y principal para la imagen del
-              record fue <br />
-              la tipografía y su acomodo; pues este, como las letras de una
-              canción, <br />
-              transmite un mensaje a través de como está puesto.
-            </p>
+      <div class="cat-editorial-img5">
+        <a href="#popup5">
+          <img
+            class="vinl"
+            src="https://res.cloudinary.com/ric18399/image/upload/v1615315148/Portafolio%202021/jpgs/proyecto-lps_bxi2lx.gif"
+            alt="imagen"
+          />
+        </a>
+        <div id="popup5" class="overlay">
+          <div class="popup2">
+            <h2 class="modalt">Viniles</h2>
+            <a class="close" href="#">←</a>
+            <div class="content">
+              <p>
+                La música no solo nos trasmite emociones sino también
+                recuerdos,<br />
+                colores y olores a través de sus letras y melodías. En estas
+                portadas <br />
+                se buscó capturar el carácter de la música para poder crear
+                así<br />
+                sus portadas. El elemento base y principal para la imagen del
+                record fue <br />
+                la tipografía y su acomodo; pues este, como las letras de una
+                canción, <br />
+                transmite un mensaje a través de como está puesto.
+              </p>
 
-            <div class="slider">
-              <div class="imagenes">
-                <img
-                  class="imagen actual"
-                  src="https://res.cloudinary.com/ric18399/image/upload/v1620151676/Portafolio%202021/jpgs/lexapro_wvjpbi.png"
-                  width="794"
-                  height="878"
-                />
-                <img
-                  class="imagen"
-                  src="https://res.cloudinary.com/ric18399/image/upload/v1620151676/Portafolio%202021/jpgs/Beck_v5bvef.png"
-                  width="794"
-                  height="878"
-                />
-                <img
-                  class="imagen"
-                  src="https://res.cloudinary.com/ric18399/image/upload/v1620151676/Portafolio%202021/jpgs/chopin_wja5wr.png"
-                  width="794"
-                  height="878"
-                />
-                <img
-                  class="imagen"
-                  src="https://res.cloudinary.com/ric18399/image/upload/v1620151197/Portafolio%202021/jpgs/Venutra_xa0doc.png"
-                  width="794"
-                  height="878"
-                />
+              <div class="slider">
+                <div class="imagenes">
+                  <img
+                    class="imagen actual"
+                    src="https://res.cloudinary.com/ric18399/image/upload/v1620151676/Portafolio%202021/jpgs/lexapro_wvjpbi.png"
+                    width="794"
+                    height="878"
+                  />
+                  <img
+                    class="imagen"
+                    src="https://res.cloudinary.com/ric18399/image/upload/v1620151676/Portafolio%202021/jpgs/Beck_v5bvef.png"
+                    width="794"
+                    height="878"
+                  />
+                  <img
+                    class="imagen"
+                    src="https://res.cloudinary.com/ric18399/image/upload/v1620151676/Portafolio%202021/jpgs/chopin_wja5wr.png"
+                    width="794"
+                    height="878"
+                  />
+                  <img
+                    class="imagen"
+                    src="https://res.cloudinary.com/ric18399/image/upload/v1620151197/Portafolio%202021/jpgs/Venutra_xa0doc.png"
+                    width="794"
+                    height="878"
+                  />
+                </div>
+                <button class="anterior">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="89"
+                    height="89"
+                  >
+                    <path
+                      d="M 11.871 19.506 L 29.49 1.887 C 29.924 1.453 29.924 0.758 29.49 0.325 C 29.057 -0.108 28.362 -0.108 27.929 0.325 L 9.524 18.729 C 9.091 19.163 9.091 19.858 9.524 20.291 L 27.929 38.687 C 28.141 38.9 28.427 39.014 28.705 39.014 C 28.983 39.014 29.269 38.908 29.482 38.687 C 29.915 38.254 29.915 37.559 29.482 37.126 Z"
+                      fill="transparent"
+                    />
+                  </svg>
+                </button>
+                <button class="siguiente">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="89"
+                    height="89"
+                  >
+                    <path
+                      d="M 11.871 19.506 L 29.49 1.887 C 29.924 1.453 29.924 0.758 29.49 0.325 C 29.057 -0.108 28.362 -0.108 27.929 0.325 L 9.524 18.729 C 9.091 19.163 9.091 19.858 9.524 20.291 L 27.929 38.687 C 28.141 38.9 28.427 39.014 28.705 39.014 C 28.983 39.014 29.269 38.908 29.482 38.687 C 29.915 38.254 29.915 37.559 29.482 37.126 Z"
+                      fill="transparent"
+                    />
+                  </svg>
+                </button>
               </div>
-              <button class="anterior">
-                <svg xmlns="http://www.w3.org/2000/svg" width="89" height="89">
-                  <path
-                    d="M 11.871 19.506 L 29.49 1.887 C 29.924 1.453 29.924 0.758 29.49 0.325 C 29.057 -0.108 28.362 -0.108 27.929 0.325 L 9.524 18.729 C 9.091 19.163 9.091 19.858 9.524 20.291 L 27.929 38.687 C 28.141 38.9 28.427 39.014 28.705 39.014 C 28.983 39.014 29.269 38.908 29.482 38.687 C 29.915 38.254 29.915 37.559 29.482 37.126 Z"
-                    fill="transparent"
-                  />
-                </svg>
-              </button>
-              <button class="siguiente">
-                <svg xmlns="http://www.w3.org/2000/svg" width="89" height="89">
-                  <path
-                    d="M 11.871 19.506 L 29.49 1.887 C 29.924 1.453 29.924 0.758 29.49 0.325 C 29.057 -0.108 28.362 -0.108 27.929 0.325 L 9.524 18.729 C 9.091 19.163 9.091 19.858 9.524 20.291 L 27.929 38.687 C 28.141 38.9 28.427 39.014 28.705 39.014 C 28.983 39.014 29.269 38.908 29.482 38.687 C 29.915 38.254 29.915 37.559 29.482 37.126 Z"
-                    fill="transparent"
-                  />
-                </svg>
-              </button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="cat-editorial-img5">
-        <a href="#popup5">
-          <img
-            src="https://res.cloudinary.com/ric18399/image/upload/v1615315148/Portafolio%202021/jpgs/proyecto-lps_bxi2lx.gif"
-            alt="imagen"
-            width="335"
-            height="335"
-          />
-        </a>
-      </div>
-
       <div class="cat-editorial-img6">
         <a href="#popup6">
           <img
+            class="malb"
             src="https://res.cloudinary.com/ric18399/image/upload/v1615315161/Portafolio%202021/jpgs/proyecto-malbas_mghoan.gif"
             alt="imagen"
-            width="342"
-            height="565"
           />
         </a>
         <div id="popup6" class="overlay">
@@ -463,10 +467,9 @@
       <div class="cat-editorial-img7">
         <a href="#popup7">
           <img
+            class="paraper"
             src="https://res.cloudinary.com/ric18399/image/upload/v1615315176/Portafolio%202021/jpgs/proyecto-paraisoperdido-15_pcwkuf.png"
             alt="imagen"
-            width="790"
-            height="474"
           />
         </a>
         <div id="popup7" class="overlay">
@@ -531,8 +534,6 @@
           <img
             src="https://res.cloudinary.com/ric18399/image/upload/v1615478800/Portafolio%202021/jpgs/proyecto-borbollon-05_pjpgoa.png"
             alt="Proyecto borbollon"
-            width="349"
-            height="554"
           />
         </a>
         <div id="popup8" class="overlay">
@@ -598,8 +599,6 @@
           <img
             src="https://res.cloudinary.com/ric18399/image/upload/v1615478803/Portafolio%202021/jpgs/proyecto-xsx-06_lalpjp.png"
             alt="Proyecto xsx"
-            width="530"
-            height="639"
           />
         </a>
         <div id="popup9" class="overlay">
@@ -661,8 +660,6 @@
           <img
             src="https://res.cloudinary.com/ric18399/image/upload/v1615478800/Portafolio%202021/jpgs/proyecto-lesgai-07_syfsp8.png"
             alt="Proyecto lesgai"
-            width="689"
-            height="379"
           />
         </a>
         <div id="popup10" class="overlay">
@@ -730,8 +727,6 @@
           <img
             src="https://res.cloudinary.com/ric18399/image/upload/v1615478801/Portafolio%202021/jpgs/proyecto-kris-08_ep9g6v.png"
             alt="Proyecto kris"
-            width="300"
-            height="444"
           />
         </a>
         <div id="popup11" class="overlay">
@@ -799,9 +794,6 @@
         <a href="#popup12">
           <img
             src="https://res.cloudinary.com/ric18399/image/upload/v1618282643/Portafolio%202021/jpgs/WAT_krxi98.png"
-            alt="WE ARE THEM"
-            width="699"
-            height="384"
           />
         </a>
         <div id="popup12" class="overlay">
@@ -864,8 +856,6 @@
           <img
             src="https://res.cloudinary.com/ric18399/image/upload/v1618282643/Portafolio%202021/jpgs/Les_gai-06_pq5vvz.png"
             alt="Les gai"
-            width="516"
-            height="283"
           />
         </a>
         <div id="popup13" class="overlay">
@@ -947,15 +937,13 @@
 
     <a
       class="sorpresa"
-      href="https://res.cloudinary.com/ric18399/image/upload/v1615315176/Portafolio%202021/jpgs/proyecto-paraisoperdido-15_pcwkuf.png"
+      href="https://res.cloudinary.com/ric18399/raw/upload/v1622677610/Portafolio%202021/Sorpresa"
       download
     >
       <img
         class="sorpresa-img"
         src="https://res.cloudinary.com/ric18399/image/upload/v1618284346/Portafolio%202021/jpgs/sopresa-09_oem4ow.png"
         alt="Sopresa"
-        width="418"
-        height="409"
       />
     </a>
     <nav class="redes">
@@ -964,8 +952,6 @@
           class="instagram"
           src="https://res.cloudinary.com/ric18399/image/upload/v1618284340/Portafolio%202021/jpgs/Instagram-10_goe166.png"
           alt="Instagram"
-          width="50"
-          height="50"
         />
       </a>
       <a href=" "
@@ -973,8 +959,6 @@
           class="behance"
           src="https://res.cloudinary.com/ric18399/image/upload/v1618284340/Portafolio%202021/jpgs/Behance-10_nclpkk.png"
           alt="Behance"
-          width="50"
-          height="50"
         />
       </a>
     </nav>
