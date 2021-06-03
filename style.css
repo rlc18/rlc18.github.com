@@ -300,6 +300,11 @@ img:hover {
   padding-right: 50px;
 }
 
+.botones-slider {
+  width: 20px;
+  height: 20px;
+}
+
 .cat-editorial-img2 {
   grid-column: 2 / 3;
   grid-row: 2/3;
@@ -978,6 +983,11 @@ button:last-child {
     padding-left: 25px;
     justify-self: center;
     align-self: center;
+  }
+
+  .botones-slider {
+    width: 89px;
+    height: 89px;
   }
 
   .slider {
